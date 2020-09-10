@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Notification Settings">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notification_state"
+            android:summary="Notification is Enabled"
+            android:title="Show Notification" />
+        <Preference
+            android:key="reset_data"
+            android:summary="All data will be removed"
+            android:title="Reset Data" />
+    </PreferenceCategory>
+</PreferenceScreen>

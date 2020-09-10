@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ll"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0dip"
+        android:layout_marginTop="0.0dip">
+
+        <LinearLayout
+            android:id="@+id/linearCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="horizontal"
+            android:weightSum="13.0">
+
+            <TextView
+                android:id="@+id/id_date"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:layout_weight="4.0"
+                android:paddingBottom="3.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="3.0dip"
+                android:text="date"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/id_wifi"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingBottom="3.0dip"
+                android:paddingRight="2.0dip"
+                android:paddingTop="3.0dip"
+                android:text="wifi"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingBottom="3.0dip"
+                android:paddingRight="2.0dip"
+                android:paddingTop="3.0dip"
+                android:text="mobile"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingBottom="3.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="3.0dip"
+                android:text="total"
+                android:textColor="#ff000000" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+        <LinearLayout
+            android:id="@+id/id_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip"
+            android:paddingTop="3.0dip"
+            android:weightSum="13.0">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0"
+                android:gravity="left"
+                android:paddingLeft="15.0dip"
+                android:text="Date"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingRight="2.0dip"
+                android:text="WiFi"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingRight="2.0dip"
+                android:text="Mobile"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingRight="10.0dip"
+                android:text="Total"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total_bar"
+        android:layout_below="@id/id_titlebar"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+            android:id="@+id/total_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip"
+            android:paddingTop="3.0dip"
+
+            android:weightSum="13.0">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0"
+                android:gravity="left"
+                android:paddingLeft="15.0dip"
+                android:text="Total"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_wifi"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingRight="2.0dip"
+                android:text="Wifi"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_mobile"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingRight="2.0dip"
+                android:text="Mobile"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_total"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:paddingRight="10.0dip"
+                android:text="Total"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--    <LinearLayout
+       android:id="@+id/linear_add"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal" >
+  <com.google.android.gms.ads.AdView
+           android:id="@+id/adView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           ads:adSize="SMART_BANNER"
+           ads:adUnitId="@string/banner_home_footer"/>
+
+    </LinearLayout>
+     -->
