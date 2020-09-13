@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         ft.commit();
 
 
-        //  doubleBackToExitPressedOnce = false;
+
     }
 
     public boolean onCreateOptionsMenu(final Menu menu) {
@@ -50,29 +50,6 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.setting: {
 
-          /*    Fragment fragment= new SettingsActivity();
-
-                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.content_frame, fragment);
-                ft.commit();
-
-
-           */
-          /*
-
-                SharedPreferences sp_today = getApplicationContext().getSharedPreferences(DataService.TODAY_DATA, 0);
-                SharedPreferences sp_month = getApplicationContext().getSharedPreferences(DataService.MONTH_DATA, 0);
-                SharedPreferences.Editor editor = sp_today.edit();
-                SharedPreferences.Editor edito2 = sp_month.edit();
-                editor.clear();
-                edito2.clear();
-                editor.apply();
-                edito2.apply();
-                //  startActivity(new Intent(this,SettingsActivity.class));
-                Toast.makeText(getApplicationContext(), "Share is Selected", Toast.LENGTH_SHORT).show();
-                return true;
-
-           */
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setMessage("All Data Will Be Clear!").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @SuppressLint("WrongConstant")
@@ -85,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                         edito2.clear();
                         editor.apply();
                         edito2.apply();
-                        // Toast.makeText(SettingsActivity.this.getActivity(), "Data Removed", 1).show();
+
 
 
                     }
@@ -97,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog alert = builder.create();
                 alert.setTitle("Do You Want To Reset Data?");
                 alert.show();
-                // return true;
+
             }
 
 
